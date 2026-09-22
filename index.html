@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0c12" />
+  <meta name="description" content="Một lời nhắn nhỏ, gửi riêng cho em." />
+  <title>for my favorite person</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="aurora aurora-a" aria-hidden="true"></div>
+  <div class="aurora aurora-b" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Trang chủ"><span class="brand-dot"></span>for you<span class="brand-cursor">_</span></a>
+    <div class="top-status"><span class="status-dot"></span><span id="statusText">a little thing I made</span></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow reveal">// private_message.exe</p>
+      <h1 class="reveal delay-1 kinetic-title" id="heroTitle"><span class="title-line">Em là điều</span><br><em class="title-line">đẹp nhất</em> <span class="title-line">trong ngày.</span></h1>
+      <p class="hero-copy reveal delay-2">Không cần một dịp đặc biệt. Chỉ là anh muốn em biết,<br class="desktop-only"> ở đâu đó trong ngày của anh luôn có một phần dành cho em.</p>
+      <div class="hero-actions reveal delay-3">
+        <button class="primary-btn" id="startBtn">Bấm vào đây <span>↗</span></button>
+        <span class="hint">âm thanh bật khi em sẵn sàng</span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>MY FAVORITE PERSON</span><i>✦</i><span>ALWAYS YOU</span><i>✦</i><span>MADE WITH LOVE &amp; CODE</span><i>✦</i><span>MY FAVORITE PERSON</span><i>✦</i><span>ALWAYS YOU</span><i>✦</i><span>MADE WITH LOVE &amp; CODE</span><i>✦</i></div></div>
+
+    <section class="message-stage" id="messageStage" aria-live="polite">
+      <div class="stage-meta"><span>NOTE / 01</span><span>for: my person</span></div>
+      <div class="message-card">
+        <div class="terminal-line"><span class="prompt">&gt;</span><span id="typedLine"></span><span class="typing-caret"></span></div>
+        <p class="big-message" id="bigMessage">Anh không hứa sẽ làm mọi ngày đều hoàn hảo,<br><span>nhưng anh hứa sẽ làm chúng đáng nhớ hơn.</span></p>
+        <p class="signature">— người luôn chọn em, mỗi ngày</p>
+      </div>
+      <div class="message-actions"><button class="ghost-btn" id="anotherBtn">một câu khác <span>↻</span></button><button class="music-btn" id="musicBtn"><span class="music-bars"><i></i><i></i><i></i></span><span id="musicLabel">bật nhạc</span></button></div>
+      <div class="player" id="player" aria-label="Trình phát nhạc"><button class="record-button" id="recordButton" aria-label="Phát hoặc tạm dừng nhạc"><span class="record"><span class="record-label">NGÀY<br>ĐẦU<br>TIÊN</span><span class="record-hole"></span></span><span class="tonearm"></span></button><div class="track-info"><span class="track-kicker">now playing / dành cho em</span><strong>Ngày Đầu Tiên</strong><span class="track-artist">Đức Phúc</span><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+    </section>
+
+    <section class="kinetic-quote" aria-label="Lời nhắn"><p class="float-word word-one">YOU</p><p class="float-word word-two">ARE</p><p class="float-word word-three">ENOUGH.</p><div class="quote-center"><span>while (true) {</span><strong>chooseYou();</strong><span>}</span></div></section>
+
+    <section class="wishes" id="wishes">
+      <div class="section-heading"><p class="eyebrow">// things I hope you remember</p><p class="section-note">kéo để khám phá</p></div>
+      <div class="wish-grid">
+        <article class="wish-card"><span class="wish-index">01</span><p>Em không cần phải trở thành ai khác để được yêu. <strong>Em của hôm nay đã đủ tuyệt vời rồi.</strong></p></article>
+        <article class="wish-card featured"><span class="wish-index">02</span><p>Mong em luôn có những ngày thật dịu dàng, và nếu có ngày mệt quá, <strong>hãy để anh ôm em một chút.</strong></p></article>
+        <article class="wish-card"><span class="wish-index">03</span><p>Cảm ơn em vì đã xuất hiện, và khiến những điều bình thường trong cuộc sống <strong>trở nên đáng mong chờ.</strong></p></article>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">// one last thing</p>
+      <h2>Yêu em nhiều hơn<br><em>anh có thể viết thành code.</em></h2>
+      <button class="outline-btn" id="replayBtn">xem lại từ đầu <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer><span>made with intention</span><span>♡ 2026</span></footer>
+
+  <div class="toast" id="toast">Âm thanh sẽ bắt đầu cùng lần chạm tiếp theo ✦</div>
+  <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
+  <audio id="audio" loop preload="metadata" src="assets/ngay-dau-tien.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
